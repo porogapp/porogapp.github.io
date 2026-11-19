@@ -63,6 +63,11 @@ ul { padding-left: 20px; }
 .hero { display: grid; gap: 24px; align-items: center; margin: 8px 0 40px; }
 .hero h1 { font-size: clamp(36px, 8vw, 52px); }
 .hero p { font-size: 18px; color: var(--ink2); margin: 0; max-width: 34em; }
+.store { display: inline-flex; align-items: center; gap: 10px; margin-top: 20px; padding: 8px 18px 8px 14px; min-height: 52px; background: #000; color: #fff; border: 1px solid #a6a6a6; border-radius: 12px; text-decoration: none; transition: opacity .15s; }
+.store:hover { opacity: .85; }
+.store svg { width: 24px; height: 30px; flex: none; }
+.store span { display: flex; flex-direction: column; font-size: 22px; font-weight: 600; line-height: 1.05; letter-spacing: -0.02em; }
+.store small { font-size: 11px; font-weight: 500; letter-spacing: 0; }
 .hero-icon { width: 96px; height: 96px; border-radius: 22px; }
 .meter { background: var(--card); border: 1px solid var(--line); border-radius: 22px; padding: 20px 22px; }
 .meter-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; font-size: 15px; }
