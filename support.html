@@ -2,58 +2,64 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Porog Support</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Support · Porog</title>
   <meta name="description" content="Contact Porog support and answers to common questions.">
   <link rel="canonical" href="https://porogapp.github.io/support.html">
+  <link rel="alternate" hreflang="x-default" href="https://porogapp.github.io/support.html">
+  <link rel="alternate" hreflang="en" href="https://porogapp.github.io/support.html">
+  <link rel="alternate" hreflang="ru" href="https://porogapp.github.io/ru/support.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Porog">
+  <meta property="og:title" content="Support · Porog">
+  <meta property="og:description" content="Contact Porog support and answers to common questions.">
+  <meta property="og:url" content="https://porogapp.github.io/support.html">
+  <meta property="og:image" content="https://porogapp.github.io/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="apple-itunes-app" content="app-id=6835334173">
+  <script>(()=>{const C=["en","ru"],h=location.hash;let l;try{l=localStorage.getItem('lang')}catch{}if(!C.includes(l))l=navigator.languages.map(t=>t.split('-')[0]).find(t=>C.includes(t));if(h==='#ru'||h!=='#en'&&l==='ru')location.replace('ru/support.html'+(h==='#ru'?'':h))})()</script>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <meta property="og:site_name" content="Porog">
-  <meta property="og:image" content="https://porogapp.github.io/og-image.png">
-  <meta property="og:title" content="Porog Support">
-  <meta property="og:description" content="Contact Porog support and answers to common questions.">
-  <meta property="og:url" content="https://porogapp.github.io/support.html">
-  <link rel="stylesheet" href="style.css?v=2">
+  <meta name="theme-color" content="#cfc4b1" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0d0c0a" media="(prefers-color-scheme: dark)">
+  <script>(()=>{const q=matchMedia('(prefers-color-scheme: dark)'),set=()=>{let t;try{t=localStorage.getItem('theme')}catch{}document.documentElement.dataset.theme=t==='dark'||t==='light'?t:q.matches?'dark':'light'};q.addEventListener('change',set);set()})()</script>
+  <link rel="preload" href="assets/fonts/geologica-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/site.css?v=f76b8282">
+  <script src="assets/site.js?v=f76b8282" defer></script>
 </head>
 <body>
-<main>
-  <header>
-    <a class="brand" href="./"><img src="apple-touch-icon.png" alt="">Porog</a>
-    <nav><a href="privacy.html">Privacy</a><a href="support.html">Support</a></nav>
-  </header>
-  <h1>Support</h1>
-  <p class="meta">Поддержка</p>
+<div class="frame" id="top">
+  <header class="nav"><div class="nav-in">
+    <a class="brand" href="./"><img src="apple-touch-icon.png" width="32" height="32" alt="">Porog</a>
+    <nav aria-label="Porog"><ul>
+      <li><a href="./#window">90/180</a></li><li><a href="./#screens">Screens</a></li><li><a href="./#globe">Globe</a></li><li><a href="./#residency">Residency</a></li><li><a href="./#features">Features</a></li><li><a href="./support.html">Support</a></li>
+    </ul></nav>
+    <div class="tools">
+      <details class="lang"><summary aria-label="Language"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9.2"/><path d="M2.8 12h18.4M12 2.8c3 2.6 4.2 5.7 4.2 9.2S15 18.6 12 21.2c-3-2.6-4.2-5.700-4.2-9.200S9 5.400 12 2.800z"/></svg>en</summary><div class="langs"><a href="support.html#en" hreflang="en" lang="en" aria-current="true">English</a><a href="ru/support.html" hreflang="ru" lang="ru">Русский</a></div></details>
+      <button class="theme" id="theme" type="button" aria-label="Light or dark appearance"><svg class="day" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.4"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.3 5.3l1.4 1.4M17.3 17.3l1.4 1.4M5.3 18.7l1.4-1.4M17.3 6.700l1.400-1.400"/></svg><svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8.300 8.300 0 0 1 9.500 4 8.300 8.300 0 1 0 20 14.500z"/></svg></button>
+      <a class="btn small" href="https://apps.apple.com/us/app/porog-days-in-country-tracker/id6835334173">Get the app</a>
+    </div>
+  </div></header>
+  <section class="top" data-scene="top">
+    <img width="320" height="120" class="layer cloud" data-y=".4" data-m="-16" src="assets/cloud.svg" alt="" style="width:clamp(110px,15vw,220px);left:8%;top:30%">
+    <img width="320" height="120" class="layer cloud" data-y=".3" data-m="-26" src="assets/cloud.svg" alt="" style="width:clamp(90px,12vw,170px);right:9%;top:38%">
+    <img width="2400" height="700" class="layer hills far" fetchpriority="high" data-y=".24" data-m="-12" src="assets/hills-far.svg" alt="">
+    <h1 class="wrap" data-y=".3">Support</h1>
+    <img width="2400" height="700" class="layer hills near" fetchpriority="high" data-y=".06" data-m="-26" src="assets/hills-near.svg" alt="">
+    <img width="320" height="330" class="layer prop" data-y="-.08" data-m="14" src="assets/suitcase.svg" alt="">
+  </section>
+  <main class="sheet"><div class="wrap page">
+    <div class="contact"><p>Write to us. We usually reply within a few days. Please include your iPhone model, iOS version and the app version (Settings in Porog).</p><a class="btn" href="mailto:porogapp@gmail.com">porogapp@gmail.com</a></div>
+    <div class="faq"><section><h2>How do I restore Porog Pro?</h2><p>Open Settings in Porog and tap “Restore purchases”. Use the same Apple ID you bought it with.</p></section><section><h2>My trips do not sync between devices</h2><p>Make sure both devices use the same Apple Account in iCloud, and iCloud sync is on in Porog Settings.</p></section><section><h2>How do I delete my data?</h2><p>In Porog Settings tap “Delete iCloud data”: this erases the copies of your data and the backups in your iCloud. Deleting the app removes the data on the device.</p></section><section><h2>Is Porog legal or tax advice?</h2><p>No. Porog is a counting tool. Rules change and depend on your situation, so confirm important decisions with the authorities or a professional.</p></section></div>
+  </div></main>
+  <div class="ground"><img width="2400" height="160" loading="lazy" class="edge" src="assets/strata-night.svg" alt=""><footer><a href="./">Home</a><a href="./privacy.html">Privacy Policy</a><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of Use</a><a href="./support.html">Support</a><a href="mailto:porogapp@gmail.com">porogapp@gmail.com</a></footer>
+</div>
 
-  <div class="card">
-    <h3>Contact</h3>
-    <p>Write to <a href="mailto:porogapp@gmail.com">porogapp@gmail.com</a>. We usually reply within a few days. Please include your iPhone model, iOS version and the app version (Settings in Porog).</p>
-    <h3 lang="ru">Связаться</h3>
-    <p lang="ru">Пишите на <a href="mailto:porogapp@gmail.com">porogapp@gmail.com</a>. Обычно отвечаем в течение нескольких дней. Укажите модель iPhone, версию iOS и версию приложения.</p>
-  </div>
+</div>
 
-  <h2>Frequently asked</h2>
-
-  <h3>How do I restore Porog Pro?</h3>
-  <p>Open Settings in Porog and tap “Restore purchases”. Use the same Apple ID you bought it with.</p>
-  <p lang="ru"><b>Как восстановить покупку Porog Pro?</b> Настройки → «Восстановить покупки». Нужен тот же Apple ID, с которого была покупка.</p>
-
-  <h3>My trips do not sync between devices</h3>
-  <p>Make sure both devices use the same Apple Account in iCloud, and iCloud sync is on in Porog Settings.</p>
-  <p lang="ru"><b>Поездки не синхронизируются.</b> Проверьте, что на обоих устройствах один аккаунт iCloud и включена синхронизация в настройках Porog.</p>
-
-  <h3>How do I delete my data?</h3>
-  <p>In Porog Settings tap “Delete iCloud data”: this erases the copies of your data and the backups in your iCloud. Deleting the app removes the data on the device.</p>
-  <p lang="ru"><b>Как удалить данные?</b> Настройки → «Удалить данные из iCloud»: удаляются копии данных и резервные копии в вашем iCloud. Удаление приложения стирает данные на устройстве.</p>
-
-  <h3>Is Porog legal or tax advice?</h3>
-  <p>No. Porog is a counting tool. Rules change and depend on your situation, so confirm important decisions with the authorities or a professional.</p>
-  <p lang="ru"><b>Это юридическая или налоговая консультация?</b> Нет. Porog только считает дни. Правила меняются и зависят от ситуации, важные решения сверяйте с официальными источниками или специалистом.</p>
-
-  <footer>
-    <a href="privacy.html">Privacy Policy</a> ·
-    <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of Use</a>
-  </footer>
-</main>
 </body>
 </html>

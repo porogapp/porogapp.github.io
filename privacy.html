@@ -2,165 +2,124 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Porog Privacy Policy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Privacy Policy · Porog</title>
   <meta name="description" content="What data Porog handles, which third-party services it uses, and how to delete your data.">
   <link rel="canonical" href="https://porogapp.github.io/privacy.html">
+  <link rel="alternate" hreflang="x-default" href="https://porogapp.github.io/privacy.html">
+  <link rel="alternate" hreflang="en" href="https://porogapp.github.io/privacy.html">
+  <link rel="alternate" hreflang="ru" href="https://porogapp.github.io/ru/privacy.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Porog">
+  <meta property="og:title" content="Privacy Policy · Porog">
+  <meta property="og:description" content="What data Porog handles, which third-party services it uses, and how to delete your data.">
+  <meta property="og:url" content="https://porogapp.github.io/privacy.html">
+  <meta property="og:image" content="https://porogapp.github.io/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="apple-itunes-app" content="app-id=6835334173">
+  <script>(()=>{const C=["en","ru"],h=location.hash;let l;try{l=localStorage.getItem('lang')}catch{}if(!C.includes(l))l=navigator.languages.map(t=>t.split('-')[0]).find(t=>C.includes(t));if(h==='#ru'||h!=='#en'&&l==='ru')location.replace('ru/privacy.html'+(h==='#ru'?'':h))})()</script>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <meta property="og:site_name" content="Porog">
-  <meta property="og:image" content="https://porogapp.github.io/og-image.png">
-  <meta property="og:title" content="Porog Privacy Policy">
-  <meta property="og:description" content="What data Porog handles, which third-party services it uses, and how to delete your data.">
-  <meta property="og:url" content="https://porogapp.github.io/privacy.html">
-  <link rel="stylesheet" href="style.css?v=2">
+  <meta name="theme-color" content="#cfc4b1" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0d0c0a" media="(prefers-color-scheme: dark)">
+  <script>(()=>{const q=matchMedia('(prefers-color-scheme: dark)'),set=()=>{let t;try{t=localStorage.getItem('theme')}catch{}document.documentElement.dataset.theme=t==='dark'||t==='light'?t:q.matches?'dark':'light'};q.addEventListener('change',set);set()})()</script>
+  <link rel="preload" href="assets/fonts/geologica-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/site.css?v=f76b8282">
+  <script src="assets/site.js?v=f76b8282" defer></script>
 </head>
 <body>
-<main>
-  <header>
-    <a class="brand" href="./"><img src="apple-touch-icon.png" alt="">Porog</a>
-    <nav><a href="privacy.html">Privacy</a><a href="support.html">Support</a></nav>
-  </header>
-
-  <div class="lang"><a href="#en">English</a><a href="#ru">Русский</a></div>
-
-  <article id="en">
-    <h1>Privacy Policy</h1>
-    <p class="meta">Effective November 17, 2026</p>
-
-    <p>This policy explains what data the Porog app (“Porog”, “we”) handles and why. In short: your trips stay on your device and in your own iCloud. We do not run servers that store your trips, and we cannot see them. The app shows ads and uses analytics through the third-party services listed below.</p>
-
-    <h2>Data that stays with you</h2>
-    <ul>
-      <li><b>Trips, countries, settings and attached proof files</b> are stored on your device. iCloud sync is on by default and can be turned off in Settings; while it is on, a copy is kept in your private iCloud storage, and daily backups in your private iCloud database. Apple stores this data; we have no access to it.</li>
-      <li><b>No account.</b> Porog has no sign-in and does not ask for your name or e-mail.</li>
-      <li><b>Photos and Calendar.</b> If you turn on trip suggestions and allow access, Porog reads only the date and location of photos and calendar events, on the device, to suggest the start or end of a trip. Photos and events never leave your device.</li>
-      <li><b>Camera.</b> If you take a picture of a passport stamp or a ticket, or scan a boarding pass, the camera is used only at that moment. The boarding pass is read on the device; a picture you keep is stored with the trip like any other proof file.</li>
-      <li><b>Location.</b> If you turn on trips from location (off by default) and allow access, Porog checks which country you are in. With background access it uses the significant-change service and visit monitoring (cell towers and Wi-Fi). The coordinate is turned into a country on the device with bundled country outlines, without any network request, and then discarded. Only the country and the date are kept, on this device only: they are not synced to iCloud and not sent to anyone.</li>
-      <li><b>Assistant.</b> On devices with Apple Intelligence, the assistant answers with Apple’s on-device language model. Your questions, the answers and the trips they refer to stay on the device.</li>
-      <li><b>Apple Watch and Apple TV.</b> The Watch app receives your counts from your iPhone directly. The Apple TV app reads the copy of your trips in your own iCloud.</li>
-      <li><b>Sharing you start.</b> When you send a card in Messages, share a report, a video or a wallpaper, or watch the flight globe together over SharePlay, the people you share with see what that card, file or replay shows (for SharePlay: the countries, dates and lengths of the replayed stays). Porog never shares anything on its own.</li>
-      <li><b>App Clip.</b> The 90/180 calculator App Clip keeps the stays you enter on the device only.</li>
-      <li><b>Notifications, widgets, Shortcuts and Spotlight</b> work on the device only.</li>
-    </ul>
-
-    <h2>Data collected by third-party services</h2>
-    <div class="table-wrap">
-      <table>
-        <tr><th>Service</th><th>Purpose</th><th>Data</th></tr>
-        <tr><td>Google AdMob and User Messaging Platform</td><td>Showing ads, asking for consent</td><td>Advertising identifier (IDFA, only if you allow tracking), device and app information, IP address and approximate location derived from it, ad interactions</td></tr>
-        <tr><td>VK (myTarget, myTracker), through AdMob mediation</td><td>Showing ads, measuring them</td><td>Same kinds of data as AdMob</td></tr>
-        <tr><td>Unity Ads, when used instead of AdMob</td><td>Showing ads, measuring them</td><td>Same kinds of data as AdMob</td></tr>
-        <tr><td>Firebase Analytics</td><td>Understanding how the app is used</td><td>App usage events, device and app information, the Porog Pro purchase (product, price, currency)</td></tr>
-        <tr><td>Firebase Crashlytics and Performance Monitoring</td><td>Fixing crashes and slowdowns</td><td>Crash logs, performance traces, device and app information</td></tr>
-        <tr><td>Firebase Remote Config</td><td>Turning features on and off without an update</td><td>Device and app information</td></tr>
-      </table>
+<div class="frame" id="top">
+  <header class="nav"><div class="nav-in">
+    <a class="brand" href="./"><img src="apple-touch-icon.png" width="32" height="32" alt="">Porog</a>
+    <nav aria-label="Porog"><ul>
+      <li><a href="./#window">90/180</a></li><li><a href="./#screens">Screens</a></li><li><a href="./#globe">Globe</a></li><li><a href="./#residency">Residency</a></li><li><a href="./#features">Features</a></li><li><a href="./support.html">Support</a></li>
+    </ul></nav>
+    <div class="tools">
+      <details class="lang"><summary aria-label="Language"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9.2"/><path d="M2.8 12h18.4M12 2.8c3 2.6 4.2 5.7 4.2 9.2S15 18.6 12 21.2c-3-2.6-4.2-5.700-4.2-9.200S9 5.400 12 2.800z"/></svg>en</summary><div class="langs"><a href="privacy.html#en" hreflang="en" lang="en" aria-current="true">English</a><a href="ru/privacy.html" hreflang="ru" lang="ru">Русский</a></div></details>
+      <button class="theme" id="theme" type="button" aria-label="Light or dark appearance"><svg class="day" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.4"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.3 5.3l1.4 1.4M17.3 17.3l1.4 1.4M5.3 18.7l1.4-1.4M17.3 6.700l1.400-1.400"/></svg><svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8.300 8.300 0 0 1 9.500 4 8.300 8.300 0 1 0 20 14.500z"/></svg></button>
+      <a class="btn small" href="https://apps.apple.com/us/app/porog-days-in-country-tracker/id6835334173">Get the app</a>
     </div>
-    <p>None of these services receive your trips, countries, location, photos, calendar events, assistant conversations, name or e-mail.</p>
-    <p>Their own policies: <a href="https://policies.google.com/privacy">Google</a>, <a href="https://firebase.google.com/support/privacy">Firebase</a>, <a href="https://vk.company/en/company/privacy/">VK</a>, <a href="https://unity.com/legal/privacy-policy">Unity</a>.</p>
+  </div></header>
+  <section class="top" data-scene="top">
+    <img width="320" height="120" class="layer cloud" data-y=".4" data-m="-16" src="assets/cloud.svg" alt="" style="width:clamp(110px,15vw,220px);left:10%;top:34%">
+    <img width="320" height="120" class="layer cloud" data-y=".3" data-m="-26" src="assets/cloud.svg" alt="" style="width:clamp(90px,12vw,170px);right:7%;top:28%">
+    <img width="2400" height="700" class="layer hills far" fetchpriority="high" data-y=".24" data-m="-12" src="assets/hills-far.svg" alt="">
+    <h1 class="wrap" data-y=".3">Privacy Policy</h1>
+    <img width="2400" height="700" class="layer hills near" fetchpriority="high" data-y=".06" data-m="-26" src="assets/hills-near.svg" alt="">
+    <img width="280" height="360" class="layer prop" data-y="-.08" data-m="14" src="assets/passport.svg" alt="">
+  </section>
+  <main class="sheet"><div class="wrap page">
+    <div class="legal"><nav class="toc" aria-label="Privacy Policy"><a href="#p1">Data that stays with you</a><a href="#p2">Data collected by third-party services</a><a href="#p3">Tracking and consent</a><a href="#p4">Purchases</a><a href="#p5">Legal bases (EEA, UK)</a><a href="#p6">Retention and deletion</a><a href="#p7">Your rights</a><a href="#p8">Children</a><a href="#p9">Changes</a><a href="#p10">Contact</a></nav><article class="prose"><p class="meta">Effective November 17, 2026</p>
 
-    <h2>Tracking and consent</h2>
-    <p>Porog asks for permission through Apple’s App Tracking Transparency prompt before ads may use your advertising identifier. If you decline, ads are not personalised with it, and analytics data is not used for advertising. In the European Economic Area, the United Kingdom and Switzerland, Porog also asks for consent through Google’s consent form before ads and analytics store data; you can change your choice at any time in Settings → Ad privacy settings. You can also change tracking permission in iOS Settings → Privacy &amp; Security → Tracking.</p>
-    <p>The one-time Porog Pro purchase turns off all ads.</p>
+<p>This policy explains what data the Porog app (“Porog”, “we”) handles and why. In short: your trips stay on your device and in your own iCloud. We do not run servers that store your trips, and we cannot see them. The app shows ads and uses analytics through the third-party services listed below.</p>
 
-    <h2>Purchases</h2>
-    <p>Payments are handled by Apple. We never receive your payment details.</p>
+<h2 id="p1">Data that stays with you</h2>
+<ul>
+  <li><b>Trips, countries, settings and attached proof files</b> are stored on your device. iCloud sync is on by default and can be turned off in Settings; while it is on, a copy is kept in your private iCloud storage, and daily backups in your private iCloud database. Apple stores this data; we have no access to it.</li>
+  <li><b>No account.</b> Porog has no sign-in and does not ask for your name or e-mail.</li>
+  <li><b>Photos and Calendar.</b> If you turn on trip suggestions and allow access, Porog reads only the date and location of photos and calendar events, on the device, to suggest the start or end of a trip. Photos and events never leave your device.</li>
+  <li><b>Camera.</b> If you take a picture of a passport stamp or a ticket, or scan a boarding pass, the camera is used only at that moment. The boarding pass is read on the device; a picture you keep is stored with the trip like any other proof file.</li>
+  <li><b>Location.</b> If you turn on trips from location (off by default) and allow access, Porog checks which country you are in. With background access it uses the significant-change service and visit monitoring (cell towers and Wi-Fi). The coordinate is turned into a country on the device with bundled country outlines, without any network request, and then discarded. Only the country and the date are kept, on this device only: they are not synced to iCloud and not sent to anyone.</li>
+  <li><b>Assistant.</b> On devices with Apple Intelligence, the assistant answers with Apple’s on-device language model. Your questions, the answers and the trips they refer to stay on the device.</li>
+  <li><b>Apple Watch and Apple TV.</b> The Watch app receives your counts from your iPhone directly. The Apple TV app reads the copy of your trips in your own iCloud.</li>
+  <li><b>Sharing you start.</b> When you send a card in Messages, share a report, a video or a wallpaper, or watch the flight globe together over SharePlay, the people you share with see what that card, file or replay shows (for SharePlay: the countries, dates and lengths of the replayed stays). Porog never shares anything on its own.</li>
+  <li><b>App Clip.</b> The 90/180 calculator App Clip keeps the stays you enter on the device only.</li>
+  <li><b>Notifications, widgets, Shortcuts and Spotlight</b> work on the device only.</li>
+</ul>
 
-    <h2>Legal bases (EEA, UK)</h2>
-    <p>Ads and analytics rely on your consent. Crash and performance diagnostics rely on our legitimate interest in keeping the app working. Data that stays on your device or in your iCloud is processed to provide the app’s features you ask for.</p>
+<h2 id="p2">Data collected by third-party services</h2>
+<div class="table-wrap">
+  <table>
+    <tr><th>Service</th><th>Purpose</th><th>Data</th></tr>
+    <tr><td>Google AdMob and User Messaging Platform</td><td>Showing ads, asking for consent</td><td>Advertising identifier (IDFA, only if you allow tracking), device and app information, IP address and approximate location derived from it, ad interactions</td></tr>
+    <tr><td>VK (myTarget, myTracker), through AdMob mediation</td><td>Showing ads, measuring them</td><td>Same kinds of data as AdMob</td></tr>
+    <tr><td>Unity Ads, when used instead of AdMob</td><td>Showing ads, measuring them</td><td>Same kinds of data as AdMob</td></tr>
+    <tr><td>Firebase Analytics</td><td>Understanding how the app is used</td><td>App usage events, device and app information, the Porog Pro purchase (product, price, currency)</td></tr>
+    <tr><td>Firebase Crashlytics and Performance Monitoring</td><td>Fixing crashes and slowdowns</td><td>Crash logs, performance traces, device and app information</td></tr>
+    <tr><td>Firebase Remote Config</td><td>Turning features on and off without an update</td><td>Device and app information</td></tr>
+  </table>
+</div>
+<p>None of these services receive your trips, countries, location, photos, calendar events, assistant conversations, name or e-mail.</p>
+<p>Their own policies: <a href="https://policies.google.com/privacy">Google</a>, <a href="https://firebase.google.com/support/privacy">Firebase</a>, <a href="https://vk.company/en/company/privacy/">VK</a>, <a href="https://unity.com/legal/privacy-policy">Unity</a>.</p>
 
-    <h2>Retention and deletion</h2>
-    <ul>
-      <li>Settings → Delete iCloud data erases the copies of your data and the backups in your iCloud and turns sync off.</li>
-      <li>Deleting the app removes all data stored on the device, including the location history.</li>
-      <li>Data held by third-party services is kept according to their policies. You can ask us to help with a deletion request at the address below.</li>
-    </ul>
+<h2 id="p3">Tracking and consent</h2>
+<p>Porog asks for permission through Apple’s App Tracking Transparency prompt before ads may use your advertising identifier. If you decline, ads are not personalised with it, and analytics data is not used for advertising. In the European Economic Area, the United Kingdom and Switzerland, Porog also asks for consent through Google’s consent form before ads and analytics store data; you can change your choice at any time in Settings → Ad privacy settings. You can also change tracking permission in iOS Settings → Privacy &amp; Security → Tracking.</p>
+<p>The one-time Porog Pro purchase turns off all ads.</p>
 
-    <h2>Your rights</h2>
-    <p>Depending on where you live, you may have the right to access, correct, delete or export your data, to object to or restrict processing, to withdraw consent, and to complain to a data protection authority. Most data is under your control in the app and in iCloud; for anything else, contact us.</p>
+<h2 id="p4">Purchases</h2>
+<p>Payments are handled by Apple. We never receive your payment details.</p>
 
-    <h2>Children</h2>
-    <p>Porog is not directed at children under 13 (or under 16 in the EEA), and we do not knowingly collect their data.</p>
+<h2 id="p5">Legal bases (EEA, UK)</h2>
+<p>Ads and analytics rely on your consent. Crash and performance diagnostics rely on our legitimate interest in keeping the app working. Data that stays on your device or in your iCloud is processed to provide the app’s features you ask for.</p>
 
-    <h2>Changes</h2>
-    <p>We will post any changes on this page and update the date above.</p>
+<h2 id="p6">Retention and deletion</h2>
+<ul>
+  <li>Settings → Delete iCloud data erases the copies of your data and the backups in your iCloud and turns sync off.</li>
+  <li>Deleting the app removes all data stored on the device, including the location history.</li>
+  <li>Data held by third-party services is kept according to their policies. You can ask us to help with a deletion request at the address below.</li>
+</ul>
 
-    <h2>Contact</h2>
-    <p><a href="mailto:porogapp@gmail.com">porogapp@gmail.com</a></p>
-  </article>
+<h2 id="p7">Your rights</h2>
+<p>Depending on where you live, you may have the right to access, correct, delete or export your data, to object to or restrict processing, to withdraw consent, and to complain to a data protection authority. Most data is under your control in the app and in iCloud; for anything else, contact us.</p>
 
-  <hr>
+<h2 id="p8">Children</h2>
+<p>Porog is not directed at children under 13 (or under 16 in the EEA), and we do not knowingly collect their data.</p>
 
-  <article id="ru" lang="ru">
-    <h1>Политика конфиденциальности</h1>
-    <p class="meta">Действует с 17 ноября 2026 года</p>
+<h2 id="p9">Changes</h2>
+<p>We will post any changes on this page and update the date above.</p>
 
-    <p>Эта политика объясняет, какие данные обрабатывает приложение Porog («Porog», «мы») и зачем. Коротко: ваши поездки хранятся на устройстве и в вашем собственном iCloud. У нас нет серверов, где хранились бы поездки, и мы их не видим. В приложении показывается реклама и используется аналитика через сторонние сервисы, перечисленные ниже.</p>
+<h2 id="p10">Contact</h2>
+<p><a href="mailto:porogapp@gmail.com">porogapp@gmail.com</a></p>
+</article></div>
+  </div></main>
+  <div class="ground"><img width="2400" height="160" loading="lazy" class="edge" src="assets/strata-night.svg" alt=""><footer><a href="./">Home</a><a href="./privacy.html">Privacy Policy</a><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of Use</a><a href="./support.html">Support</a><a href="mailto:porogapp@gmail.com">porogapp@gmail.com</a></footer>
+</div>
 
-    <h2>Данные, которые остаются у вас</h2>
-    <ul>
-      <li><b>Поездки, страны, настройки и прикреплённые подтверждения</b> хранятся на устройстве. Синхронизация iCloud включена по умолчанию, её можно выключить в настройках. Пока она включена, копия хранится в вашем личном хранилище iCloud, а ежедневные резервные копии — в вашей личной базе iCloud. Эти данные хранит Apple, у нас к ним доступа нет.</li>
-      <li><b>Без аккаунта.</b> В Porog нет входа, приложение не запрашивает имя и e-mail.</li>
-      <li><b>Фото и Календарь.</b> Если включить подсказки поездок и дать доступ, Porog на устройстве читает только дату и место снимков и событий, чтобы предложить начало или конец поездки. Фото и события не покидают устройство.</li>
-      <li><b>Камера.</b> Если сфотографировать штамп в паспорте или билет либо отсканировать посадочный талон, камера используется только в этот момент. Посадочный распознаётся на устройстве; сохранённый снимок хранится вместе с поездкой, как любое другое подтверждение.</li>
-      <li><b>Геолокация.</b> Если включить поездки по геолокации (по умолчанию выключено) и дать доступ, Porog проверяет, в какой вы стране. С доступом в фоне используются значительные изменения местоположения и посещения (вышки сотовой связи и Wi-Fi). Координата превращается в страну на устройстве по встроенным контурам стран, без сетевых запросов, и сразу отбрасывается. Хранятся только страна и дата, только на этом устройстве: они не синхронизируются через iCloud и никуда не отправляются.</li>
-      <li><b>Ассистент.</b> На устройствах с Apple Intelligence ассистент отвечает с помощью языковой модели Apple на устройстве. Вопросы, ответы и поездки, о которых идёт речь, не покидают устройство.</li>
-      <li><b>Apple Watch и Apple TV.</b> Приложение на часах получает счётчики напрямую с iPhone. Приложение на Apple TV читает копию поездок в вашем iCloud.</li>
-      <li><b>То, чем вы делитесь сами.</b> Когда вы отправляете карточку в Сообщениях, делитесь отчётом, видео или обоями либо смотрите глобус перелётов вместе через SharePlay, получатели видят то, что показывает карточка, файл или повтор (в SharePlay — страны, даты и длительность показанных поездок). Сам Porog ничем не делится.</li>
-      <li><b>App Clip.</b> Мини-приложение с калькулятором 90/180 хранит введённые поездки только на устройстве.</li>
-      <li><b>Уведомления, виджеты, Быстрые команды и Spotlight</b> работают только на устройстве.</li>
-    </ul>
+</div>
 
-    <h2>Данные, которые собирают сторонние сервисы</h2>
-    <div class="table-wrap">
-      <table>
-        <tr><th>Сервис</th><th>Зачем</th><th>Данные</th></tr>
-        <tr><td>Google AdMob и User Messaging Platform</td><td>Показ рекламы, запрос согласия</td><td>Рекламный идентификатор (IDFA, только если вы разрешили отслеживание), сведения об устройстве и приложении, IP-адрес и примерное местоположение по нему, взаимодействие с рекламой</td></tr>
-        <tr><td>VK (myTarget, myTracker) через медиацию AdMob</td><td>Показ рекламы и её измерение</td><td>Те же виды данных, что и у AdMob</td></tr>
-        <tr><td>Unity Ads, когда используется вместо AdMob</td><td>Показ рекламы и её измерение</td><td>Те же виды данных, что и у AdMob</td></tr>
-        <tr><td>Firebase Analytics</td><td>Понимание того, как используется приложение</td><td>События использования, сведения об устройстве и приложении, покупка Porog Pro (товар, цена, валюта)</td></tr>
-        <tr><td>Firebase Crashlytics и Performance Monitoring</td><td>Исправление сбоев и замедлений</td><td>Отчёты о сбоях, замеры производительности, сведения об устройстве и приложении</td></tr>
-        <tr><td>Firebase Remote Config</td><td>Включение и выключение функций без обновления</td><td>Сведения об устройстве и приложении</td></tr>
-      </table>
-    </div>
-    <p>Ни один из этих сервисов не получает ваши поездки, страны, геолокацию, фото, события календаря, переписку с ассистентом, имя или e-mail.</p>
-    <p>Их собственные политики: <a href="https://policies.google.com/privacy">Google</a>, <a href="https://firebase.google.com/support/privacy">Firebase</a>, <a href="https://vk.company/ru/company/privacy/">VK</a>, <a href="https://unity.com/legal/privacy-policy">Unity</a>.</p>
-
-    <h2>Отслеживание и согласие</h2>
-    <p>Прежде чем реклама сможет использовать рекламный идентификатор, Porog запрашивает разрешение через системное окно App Tracking Transparency. Если отказаться, реклама не персонализируется по нему, а данные аналитики не используются для рекламы. В Европейской экономической зоне, Великобритании и Швейцарии Porog также запрашивает согласие через форму Google, прежде чем реклама и аналитика сохранят данные. Изменить выбор можно в любой момент: Настройки → «Настройки конфиденциальности рекламы». Разрешение на отслеживание меняется в настройках iOS: Конфиденциальность и безопасность → Отслеживание.</p>
-    <p>Разовая покупка Porog Pro отключает всю рекламу.</p>
-
-    <h2>Покупки</h2>
-    <p>Оплату обрабатывает Apple. Мы не получаем платёжные данные.</p>
-
-    <h2>Правовые основания (ЕЭЗ, Великобритания)</h2>
-    <p>Реклама и аналитика работают на основании вашего согласия. Диагностика сбоев и производительности — на основании нашего законного интереса поддерживать работу приложения. Данные на устройстве и в вашем iCloud обрабатываются, чтобы предоставить функции, которыми вы пользуетесь.</p>
-
-    <h2>Хранение и удаление</h2>
-    <ul>
-      <li>Настройки → «Удалить данные из iCloud» стирает копии данных и резервные копии в вашем iCloud и выключает синхронизацию.</li>
-      <li>Удаление приложения стирает все данные на устройстве, включая историю геолокации.</li>
-      <li>Данные у сторонних сервисов хранятся по их правилам. Мы поможем с запросом на удаление — напишите на адрес ниже.</li>
-    </ul>
-
-    <h2>Ваши права</h2>
-    <p>В зависимости от страны проживания у вас может быть право получить, исправить, удалить или выгрузить свои данные, возразить против обработки или ограничить её, отозвать согласие и подать жалобу в надзорный орган по защите данных. Большинство данных под вашим контролем в приложении и в iCloud, по остальным вопросам пишите нам.</p>
-
-    <h2>Дети</h2>
-    <p>Porog не предназначен для детей младше 13 лет (в ЕЭЗ — младше 16), и мы сознательно не собираем их данные.</p>
-
-    <h2>Изменения</h2>
-    <p>Об изменениях мы сообщим на этой странице и обновим дату выше.</p>
-
-    <h2>Контакты</h2>
-    <p><a href="mailto:porogapp@gmail.com">porogapp@gmail.com</a></p>
-  </article>
-
-  <footer>
-    <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of Use</a> ·
-    <a href="support.html">Support</a>
-  </footer>
-</main>
 </body>
 </html>

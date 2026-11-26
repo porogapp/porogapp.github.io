@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Porog — учёт дней в каждой стране</title>
+  <meta name="description" content="Porog считает дни в каждой стране: Шенген 90/180, налоговое резидентство, прогноз и отчёты. Поездки хранятся на устройстве и в вашем iCloud.">
+  <link rel="canonical" href="https://porogapp.github.io/ru/">
+  <link rel="alternate" hreflang="x-default" href="https://porogapp.github.io/">
+  <link rel="alternate" hreflang="en" href="https://porogapp.github.io/">
+  <link rel="alternate" hreflang="ru" href="https://porogapp.github.io/ru/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Porog">
+  <meta property="og:title" content="Porog — учёт дней в каждой стране">
+  <meta property="og:description" content="Porog считает дни в каждой стране: Шенген 90/180, налоговое резидентство, прогноз и отчёты. Поездки хранятся на устройстве и в вашем iCloud.">
+  <meta property="og:url" content="https://porogapp.github.io/ru/">
+  <meta property="og:image" content="https://porogapp.github.io/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="ru_RU">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="apple-itunes-app" content="app-id=6835334173">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="../favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <meta name="theme-color" content="#cfc4b1" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0d0c0a" media="(prefers-color-scheme: dark)">
+  <script>(()=>{const q=matchMedia('(prefers-color-scheme: dark)'),set=()=>{let t;try{t=localStorage.getItem('theme')}catch{}document.documentElement.dataset.theme=t==='dark'||t==='light'?t:q.matches?'dark':'light'};q.addEventListener('change',set);set()})()</script>
+  <link rel="preload" href="../assets/fonts/geologica-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../assets/site.css?v=f76b8282">
+  <script src="../assets/site.js?v=f76b8282" defer></script>
+</head>
+<body>
+<div class="frame" id="top">
+  <header class="nav"><div class="nav-in">
+    <a class="brand" href="./"><img src="../apple-touch-icon.png" width="32" height="32" alt="">Porog</a>
+    <nav aria-label="Porog"><ul>
+      <li><a href="./#window">90/180</a></li><li><a href="./#screens">Экраны</a></li><li><a href="./#globe">Глобус</a></li><li><a href="./#residency">Резидентство</a></li><li><a href="./#features">Возможности</a></li><li><a href="./support.html">Поддержка</a></li>
+    </ul></nav>
+    <div class="tools">
+      <details class="lang"><summary aria-label="Язык"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9.2"/><path d="M2.8 12h18.4M12 2.8c3 2.6 4.2 5.7 4.2 9.2S15 18.6 12 21.2c-3-2.6-4.2-5.700-4.2-9.200S9 5.400 12 2.800z"/></svg>ru</summary><div class="langs"><a href=".././#en" hreflang="en" lang="en">English</a><a href="../ru/" hreflang="ru" lang="ru" aria-current="true">Русский</a></div></details>
+      <button class="theme" id="theme" type="button" aria-label="Светлое или тёмное оформление"><svg class="day" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.4"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.3 5.3l1.4 1.4M17.3 17.3l1.4 1.4M5.3 18.7l1.4-1.4M17.3 6.700l1.400-1.400"/></svg><svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8.300 8.300 0 0 1 9.500 4 8.300 8.300 0 1 0 20 14.500z"/></svg></button>
+      <a class="btn small" href="https://apps.apple.com/app/id6835334173">Скачать</a>
+    </div>
+  </div></header>
+  <section class="hero" data-scene="top">
+    <div class="layer sun" data-y=".42" data-m="-10"></div>
+    <img width="320" height="120" class="layer cloud" data-y=".5" data-x=".05" data-m="-14" src="../assets/cloud.svg" alt="" style="width:clamp(120px,17vw,250px);left:4%;top:21%">
+    <img width="320" height="120" class="layer cloud" data-y=".38" data-x="-.07" data-m="-22" src="../assets/cloud.svg" alt="" style="width:clamp(110px,14vw,200px);right:3%;top:31%">
+    <img width="320" height="120" class="layer cloud" data-y=".3" data-x=".09" data-m="-30" src="../assets/cloud.svg" alt="" style="width:clamp(80px,9vw,130px);left:25%;top:52%">
+    <img width="260" height="150" class="layer plane" data-y=".3" data-x=".5" data-m="-40" src="../assets/plane.svg" alt="">
+    <img width="2400" height="700" class="layer hills far" fetchpriority="high" data-y=".34" data-m="-12" src="../assets/hills-far.svg" alt="">
+    <img width="2400" height="700" class="layer hills mid" fetchpriority="high" data-y=".24" data-m="-20" src="../assets/hills-mid.svg" alt="">
+    <img width="120" height="340" class="layer tree" data-y=".2" data-m="-24" src="../assets/cypress.svg" alt="" style="width:clamp(44px,5vw,74px);left:3%;bottom:230px">
+    <img width="120" height="340" class="layer tree" data-y=".19" data-m="-26" src="../assets/cypress.svg" alt="" style="width:clamp(36px,4vw,60px);left:7%;bottom:215px">
+    <img width="120" height="340" class="layer tree" data-y=".16" data-m="-30" src="../assets/cypress.svg" alt="" style="width:clamp(60px,6.4vw,96px);left:29%;bottom:150px">
+    <img width="120" height="340" class="layer tree" data-y=".19" data-m="-27" src="../assets/cypress.svg" alt="" style="width:clamp(46px,5vw,76px);right:27%;bottom:200px">
+    <img width="120" height="340" class="layer tree" data-y=".15" data-m="-34" src="../assets/cypress.svg" alt="" style="width:clamp(64px,7vw,108px);right:3%;bottom:180px">
+    <img width="120" height="340" class="layer tree" data-y=".17" data-m="-30" src="../assets/cypress.svg" alt="" style="width:clamp(44px,5vw,78px);right:9%;bottom:170px">
+
+    <div class="hero-text wrap" data-y=".2">
+      <h1>Считайте дни <span>в каждой стране</span></h1>
+      <p>Porog следит за правилами налогового резидентства и шенгенским лимитом 90/180 и предупреждает, пока вы не перешли порог.</p>
+      <div class="cta"><a class="btn" href="#window">Как это работает</a><a class="store" href="https://apps.apple.com/app/id6835334173" aria-label="Загрузить Porog в App Store"><svg viewBox="0 0 384 512" width="24" height="30" aria-hidden="true"><path fill="currentColor" d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg><span><small>Загрузите в</small>App Store</span></a>
+</div>
+    </div>
+
+    <div class="stage"><div data-y="-.12" data-m="-8"><div class="phone"><img fetchpriority="high" src="../assets/ru/screen-overview.webp" width="640" height="1391" alt="Porog на iPhone: использован 61 из 90 дней в Шенгене, 166 из 183 дней до резидентства в Грузии"></div></div></div>
+
+    <div class="card c-photo" data-y="-.28" data-m="26"><div class="pic"><img width="280" height="360" src="../assets/passport.svg" alt=""></div><div><strong>Грузия</strong><small>17 дней до резидентства</small></div></div>
+    <div class="card c-day" data-y="-.5" data-m="40"><div class="cal"><b></b>29</div><div><strong>Шенген</strong><small>Осталось 29 дней</small></div></div>
+    <div class="card c-trip" data-y="-.36" data-m="32"><div class="pic"><img width="260" height="150" src="../assets/plane.svg" alt=""></div><div><strong>Прогноз</strong><small>Проверьте поездку до покупки билетов</small></div></div>
+    <div class="card c-status" data-y="-.6" data-m="48"><span><b>Шенген 61 / 90</b></span><span>Грузия 166 / 183</span><span class="ok">Лимиты соблюдены</span></div>
+
+    <img width="2400" height="700" class="layer hills near" fetchpriority="high" data-y=".04" data-m="-34" src="../assets/hills-near.svg" alt="">
+    <img width="320" height="330" class="layer prop left" data-y="-.1" data-m="16" src="../assets/suitcase.svg" alt="">
+    <img width="280" height="360" class="layer prop right" data-y="-.2" data-m="24" src="../assets/passport.svg" alt="">
+  </section>
+
+  <main class="sheet">
+    <section class="steps wrap" id="window">
+      <div class="pin"><div class="plateau">
+        <div class="board" id="board" role="img" aria-labelledby="say"></div>
+        <div class="say"><p id="say" aria-live="polite">Последние 180 дней, включая сегодня</p>
+          <label class="trip" id="trip" hidden>Длина поездки <input id="length" type="range" min="1" max="60" value="29"> <output id="length-text"></output></label></div>
+      </div></div>
+      <div>
+        <div class="step" data-step="0"><h2>Окно в 180 дней</h2><p>Каждый день шенгенское правило смотрит на 180 дней назад, считая сегодняшний.</p></div>
+        <div class="step" data-step="1"><h2>90 дней внутри него</h2><p>Все дни в Шенгенской зоне складываются. День въезда и день выезда тоже считаются.</p></div>
+        <div class="step" data-step="2"><h2>Старые дни возвращаются</h2><p>Окно сдвигается. День, который из него вышел, снова можно потратить.</p></div>
+        <div class="step" data-step="3"><h2>Примерьте поездку</h2><p>Сколько можно пробыть, если въехать завтра? Двигайте ползунок: каждый день поездки сверяется со своим окном.</p><small>Пример с тремя прошлыми поездками.</small></div>
+      </div>
+    </section>
+
+    <section class="numbers" id="screens">
+      <div class="run a" data-x="-.34" aria-hidden="true">90 / 180</div>
+      <div class="run b" data-x=".3" aria-hidden="true">183 дня</div>
+      <div class="wrap trio">
+        <figure data-y=".05"><div class="phone"><img src="../assets/ru/screen-country.webp" width="640" height="1391" loading="lazy" alt="Porog: резидентство в Грузии"></div><figcaption><b>Резидентство</b>Сколько дней засчитано, сколько осталось и когда счёт изменится</figcaption></figure>
+        <figure data-y="-.1"><div class="phone"><img src="../assets/ru/screen-calendar.webp" width="640" height="1391" loading="lazy" alt="Porog: год в календаре"></div><figcaption><b>Календарь</b>Весь год на одном экране и перелёты на глобусе</figcaption></figure>
+        <figure data-y=".12"><div class="phone"><img src="../assets/ru/screen-forecast.webp" width="640" height="1391" loading="lazy" alt="Porog: прогноз поездки"></div><figcaption><b>Прогноз</b>Как запланированная поездка изменит счётчики</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="globe" id="globe">
+      <div class="stage-of" id="globe-stage"><canvas id="globe-canvas" tabindex="0" role="application" aria-label="Глобус с перелётами примерного года. Стрелки вращают, плюс и минус меняют масштаб, пробел запускает показ."></canvas></div>
+      <div class="globe-in wrap">
+        <h2>Ваш год <span>на глобусе</span></h2>
+        <p>Все перелёты года в движении. Крутите глобус, приближайте, нажмите на любую страну.</p>
+        <div class="now" id="globe-now" aria-live="off"><strong></strong><ul></ul></div>
+        <div class="keys" id="globe-keys" hidden>
+          <button class="btn" id="globe-play" type="button">Показать перелёты</button>
+          <button class="round" id="globe-in" type="button" aria-label="Приблизить"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+          <button class="round" id="globe-out" type="button" aria-label="Отдалить"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+        </div>
+        <ol class="stops" id="globe-stops"><li><button type="button" data-code="GE"><i></i>Грузия <b>41</b></button></li><li><button type="button" data-code="TH"><i></i>Таиланд <b>18</b></button></li><li><button type="button" data-code="GE"><i></i>Грузия <b>66</b></button></li><li><button type="button" data-code="PT"><i></i>Португалия <b>36</b></button></li><li><button type="button" data-code="ES"><i></i>Испания <b>16</b></button></li><li><button type="button" data-code="RS"><i></i>Сербия <b>22</b></button></li><li><button type="button" data-code="DE"><i></i>Германия <b>11</b></button></li><li><button type="button" data-code="GE"><i></i>Грузия <b>47</b></button></li><li><button type="button" data-code="TR"><i></i>Турция <b>47</b></button></li><li><button type="button" data-code="PT"><i></i>Португалия <b>18</b></button></li></ol>
+        <small>Год для примера. Правила упрощены.</small>
+      </div>
+    </section>
+
+    <section class="ward" id="residency">
+      <div class="blob" data-y=".16" style="width:44vw;aspect-ratio:1;right:-8vw;top:-12vw"></div>
+      <div class="blob" data-y="-.1" style="width:20vw;aspect-ratio:1;left:30%;bottom:-9vw"></div>
+      <div class="ward-in wrap">
+        <div><h2>Налоговое резидентство <span>У каждой страны своё правило</span></h2><p>Porog знает период, порог и способ подсчёта дней. Выберите страну.</p><div class="codes"><button class="code-of" type="button" aria-pressed="true" aria-label="Грузия">GE</button><button class="code-of" type="button" aria-pressed="false" aria-label="Сербия">RS</button><button class="code-of" type="button" aria-pressed="false" aria-label="Португалия">PT</button><button class="code-of" type="button" aria-pressed="false" aria-label="Испания">ES</button><button class="code-of" type="button" aria-pressed="false" aria-label="Германия">DE</button><button class="code-of" type="button" aria-pressed="false" aria-label="Великобритания">GB</button><button class="code-of" type="button" aria-pressed="false" aria-label="Ирландия">IE</button><button class="code-of" type="button" aria-pressed="false" aria-label="Кипр">CY</button><button class="code-of" type="button" aria-pressed="false" aria-label="ОАЭ">AE</button><button class="code-of" type="button" aria-pressed="false" aria-label="Таиланд">TH</button><button class="code-of" type="button" aria-pressed="false" aria-label="Малайзия">MY</button><button class="code-of" type="button" aria-pressed="false" aria-label="США">US</button></div><small>Правила упрощены. Porog не заменяет консультацию налогового специалиста и официальные источники.</small></div>
+        <div class="page-of" data-y="-.03" aria-live="polite"><div class="stamp" id="stamp"><b>Грузия</b><strong>183</strong><span>дн.</span><i>Любые 12 месяцев подряд</i></div><p id="note"></p><span class="mrz" aria-hidden="true">P&lt;POROG&lt;&lt;DAYS&lt;IN&lt;EVERY&lt;COUNTRY&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;</span></div>
+      </div>
+    </section>
+
+    <section class="wrap more">
+      <h2>Приватность по умолчанию</h2>
+      <p class="about">Поездки хранятся на устройстве и в вашем iCloud. У Porog нет сервера, и мы не видим ваши поездки.</p>
+      <dl><dt>Без аккаунта</dt><dd>В Porog нет входа, приложение не запрашивает имя и e-mail.</dd></dl><dl><dt>Ассистент на устройстве</dt><dd>На устройствах с Apple Intelligence ассистент отвечает с помощью языковой модели Apple на устройстве.</dd></dl><dl><dt>Porog Pro</dt><dd>Приложение бесплатное. Разовая покупка по желанию убирает рекламу на iPhone и iPad и открывает Прогноз и Перелёты на Apple TV.</dd></dl><dl><dt>Porog только считает</dt><dd>Правила меняются и зависят от ситуации, важные решения сверяйте с официальными источниками или специалистом.</dd></dl>
+    </section>
+  </main>
+
+  <section class="gate" id="features">
+    <img width="2400" height="700" loading="lazy" class="layer hills ghills" data-y=".2" src="../assets/hills-far.svg" alt="">
+    <h2 class="wrap" data-y=".12">От первого дня <span>до порога</span></h2>
+    <img width="2400" height="260" loading="lazy" class="layer turf" data-y=".02" src="../assets/turf.svg" alt="">
+    <img width="320" height="330" loading="lazy" class="layer keeper" data-y="-.06" src="../assets/suitcase.svg" alt="">
+  </section>
+
+  <section class="dig" id="dig">
+    <div class="rail" aria-hidden="true"><div><img src="../apple-touch-icon.png" width="34" height="34" alt=""><span id="depth"></span></div></div>
+    <div class="band ok"><img width="200" height="200" class="thing" loading="lazy" data-y="-0.22" src="../assets/stamp-round.svg" alt="" style="left:3%;top:8%;width:clamp(65px,10.0vw,130px)"><img width="240" height="170" class="thing" loading="lazy" data-y="-0.3" src="../assets/stamp-square.svg" alt="" style="left:88%;top:46%;width:clamp(85px,13.1vw,170px)"><div class="doors wrap"><article data-y=".03"><div class="door"><img width="200" height="200" class="riser" src="../assets/thing-photo.svg" alt="" loading="lazy"></div><h3>Подсказки поездок</h3><p>По времени и месту фото и событий календаря. Обработка только на устройстве.</p></article><article data-y="-.05"><div class="door"><img width="200" height="200" class="riser" src="../assets/thing-pass.svg" alt="" loading="lazy"></div><h3>Скан посадочного</h3><p>Наведите камеру на посадочный талон, и поездка заполнится сама.</p></article><article data-y=".06"><div class="door"><img width="200" height="200" class="riser" src="../assets/thing-pin.svg" alt="" loading="lazy"></div><h3>Поездки по геолокации</h3><p>По умолчанию выключено. Хранятся только страна и дата, только на этом устройстве.</p></article></div></div>
+<div class="band warn"><img width="2400" height="160" class="edge" loading="lazy" src="../assets/strata-warn.svg" alt=""><img width="200" height="180" class="thing" loading="lazy" data-y="-0.18" src="../assets/stamp-tri.svg" alt="" style="left:1%;top:40%;width:clamp(85px,13.1vw,170px)"><img width="200" height="200" class="thing" loading="lazy" data-y="0.16" src="../assets/stamp-round.svg" alt="" style="left:91%;top:12%;width:clamp(70px,10.8vw,140px)"><div class="doors wrap"><article data-y=".03"><div class="door"><img width="200" height="200" class="riser" src="../assets/thing-bell.svg" alt="" loading="lazy"></div><h3>Предупреждения</h3><p>Уведомление заранее, на выбранном вами дне.</p></article><article data-y="-.05"><div class="door"><img width="200" height="200" class="riser" src="../assets/thing-forecast.svg" alt="" loading="lazy"></div><h3>Прогноз</h3><p>Проверьте, как поездка изменит счётчики, ещё до покупки билетов.</p></article><article data-y=".06"><div class="door"><img width="200" height="200" class="riser" src="../assets/thing-globe.svg" alt="" loading="lazy"></div><h3>Календарь и глобус</h3><p>Весь год на одном экране и все перелёты на глобусе.</p></article></div></div>
+<div class="band bad"><img width="2400" height="160" class="edge" loading="lazy" src="../assets/strata-bad.svg" alt=""><img width="240" height="170" class="thing" loading="lazy" data-y="0.18" src="../assets/stamp-square.svg" alt="" style="left:30%;top:12%;width:clamp(80px,12.3vw,160px)"><img width="200" height="180" class="thing" loading="lazy" data-y="-0.24" src="../assets/stamp-tri.svg" alt="" style="left:89%;top:34%;width:clamp(90px,13.8vw,180px)"><div class="doors wrap"><article data-y=".03"><div class="door"><img width="200" height="200" class="riser" src="../assets/thing-report.svg" alt="" loading="lazy"></div><h3>Отчёты</h3><p>Справка о пребывании в PDF и экспорт в CSV.</p></article><article data-y="-.05"><div class="door"><img width="200" height="200" class="riser" src="../assets/thing-proof.svg" alt="" loading="lazy"></div><h3>Подтверждения</h3><p>Билеты, штампы и брони прикладываются к поездкам.</p></article><article data-y=".06"><div class="door"><img width="200" height="200" class="riser" src="../assets/thing-message.svg" alt="" loading="lazy"></div><h3>Карточки в Сообщениях</h3><p>Отправьте карточку с днями тому, с кем едете.</p></article></div></div>
+<div class="band night"><img width="2400" height="160" class="edge" loading="lazy" src="../assets/strata-night.svg" alt=""><img width="200" height="200" class="thing" loading="lazy" data-y="0.16" src="../assets/stamp-round.svg" alt="" style="left:62%;top:8%;width:clamp(75px,11.5vw,150px)"><img width="240" height="170" class="thing" loading="lazy" data-y="-0.2" src="../assets/stamp-square.svg" alt="" style="left:-1%;top:52%;width:clamp(95px,14.6vw,190px)"><div class="doors wrap"><article data-y=".03"><div class="door"><img width="200" height="200" class="riser" src="../assets/thing-widget.svg" alt="" loading="lazy"></div><h3>Виджеты и Быстрые команды</h3><p>Счётчики на экране «Домой» и экране блокировки, действия для Siri и Быстрых команд.</p></article><article data-y="-.05"><div class="door"><img width="200" height="200" class="riser" src="../assets/thing-watch.svg" alt="" loading="lazy"></div><h3>Apple Watch</h3><p>Счётчики на запястье.</p></article><article data-y=".06"><div class="door"><img width="200" height="200" class="riser" src="../assets/thing-tv.svg" alt="" loading="lazy"></div><h3>Apple TV</h3><p>Ваш год путешествий на большом экране.</p></article></div></div>
+    <div class="band night floor-band"><div class="floor wrap">
+      <img width="520" height="300" class="bar" data-y="-.05" src="../assets/barrier.svg" loading="lazy" alt="">
+      <h2>Увидьте порог <span>до того, как его перейдёте</span></h2>
+      <a class="store" href="https://apps.apple.com/app/id6835334173" aria-label="Загрузить Porog в App Store"><svg viewBox="0 0 384 512" width="24" height="30" aria-hidden="true"><path fill="currentColor" d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg><span><small>Загрузите в</small>App Store</span></a>
+
+      <p class="pill">iPhone · iPad · Apple Watch · Apple TV</p>
+      <footer><a href="./">На главную</a><a href="./privacy.html">Политика конфиденциальности</a><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Условия использования</a><a href="./support.html">Поддержка</a><a href="mailto:porogapp@gmail.com">porogapp@gmail.com</a></footer>
+
+    </div></div>
+  </section>
+
+</div>
+<script type="application/json" id="texts">{"say0":"Последние 180 дней, включая сегодня","say1":"Использован 61 из 90 дней, осталось 29","say2":"Через 45 дней: засчитано 36 из 90, осталось 54","tripDays":"{0} дн.","tripFits":"Укладываетесь: {0} из 90 в последний день","tripOver":"День {0} уже за лимитом: {1} из 90","day":"День {0} / 90","countries":[["GE","Грузия",183,"Любые 12 месяцев подряд",""],["RS","Сербия",183,"Любые 12 месяцев подряд",""],["PT","Португалия",184,"Любые 12 месяцев подряд","Также резидент с первого дня, если в Португалии ваше «обычное место проживания»."],["ES","Испания",184,"Календарный год","Также резидент, если в Испании центр деловых интересов или живут супруг(а) и несовершеннолетние дети."],["DE","Германия",183,"Любые 12 месяцев подряд","Если есть жильё (Wohnsitz) — резидент с первого дня, независимо от числа дней."],["GB","Великобритания",183,"Налоговый год: 6 апреля — 5 апреля","Statutory Residence Test: при связях с UK (семья, жильё, работа) может хватить 16–120 дней."],["IE","Ирландия",183,"Календарный год","Или 280 дней за два календарных года подряд."],["CY","Кипр",184,"Календарный год","При дополнительных условиях может хватить 60 дней."],["AE","ОАЭ",183,"Любые 12 месяцев подряд","Достаточно 90 дней при ВНЖ ОАЭ и постоянном жилье или работе в стране."],["TH","Таиланд",180,"Календарный год",""],["MY","Малайзия",182,"Календарный год",""],["US","США",183,"Дни текущего года + ⅓ прошлого + ⅙ позапрошлого","Граждане США и держатели грин-карты всегда являются налоговыми резидентами."]],"stops":[["GE","Грузия","1 января",41],["TH","Таиланд","11 февраля",18],["GE","Грузия","1 марта",66],["PT","Португалия","10 мая",36],["ES","Испания","15 июня",16],["RS","Сербия","1 июля",22],["DE","Германия","26 июля",11],["GE","Грузия","6 августа",47],["TR","Турция","22 сентября",47],["PT","Португалия","8 ноября",18]],"globePlay":"Показать перелёты","globePause":"Пауза","stayLine":"{0} · {1} дн.","kmLine":"{0} км","sumTitle":"9 перелётов · 7 стран","sumLine":"{0} км за примерный год","yearDays":"{0} дн. за примерный год","noDays":"В примерном году дней нет","zoneLine":"Шенген: один счёт 90/180 на {0} стран","ruleLine":"Налоговое резидентство от {0} дн. {1}"}</script>
+<script src="../assets/globe.js?v=f76b8282" data-world="../assets/world.json?v=f76b8282" defer></script>
+</body>
+</html>

@@ -2,81 +2,165 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Porog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Porog — days in every country, counted</title>
   <meta name="description" content="Porog counts the days you spend in each country: Schengen 90/180, tax residency, forecasts and reports. Your trips stay on your device and in your iCloud.">
   <link rel="canonical" href="https://porogapp.github.io/">
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
-  <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <meta name="theme-color" content="#f2eee6" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#161512" media="(prefers-color-scheme: dark)">
+  <link rel="alternate" hreflang="x-default" href="https://porogapp.github.io/">
+  <link rel="alternate" hreflang="en" href="https://porogapp.github.io/">
+  <link rel="alternate" hreflang="ru" href="https://porogapp.github.io/ru/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Porog">
   <meta property="og:title" content="Porog — days in every country, counted">
-  <meta property="og:description" content="Schengen 90/180, tax residency, forecasts and reports. Your trips stay on your device and in your iCloud.">
+  <meta property="og:description" content="Porog counts the days you spend in each country: Schengen 90/180, tax residency, forecasts and reports. Your trips stay on your device and in your iCloud.">
   <meta property="og:url" content="https://porogapp.github.io/">
   <meta property="og:image" content="https://porogapp.github.io/og-image.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="en_US">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="yandex-verification" content="e7eddeaafa1e5b44" />
   <meta name="apple-itunes-app" content="app-id=6835334173">
-  <link rel="stylesheet" href="style.css?v=3">
+  <script>(()=>{const C=["en","ru"],h=location.hash;let l;try{l=localStorage.getItem('lang')}catch{}if(!C.includes(l))l=navigator.languages.map(t=>t.split('-')[0]).find(t=>C.includes(t));if(h==='#ru'||h!=='#en'&&l==='ru')location.replace('ru/'+(h==='#ru'?'':h))})()</script>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <meta name="theme-color" content="#cfc4b1" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0d0c0a" media="(prefers-color-scheme: dark)">
+  <script>(()=>{const q=matchMedia('(prefers-color-scheme: dark)'),set=()=>{let t;try{t=localStorage.getItem('theme')}catch{}document.documentElement.dataset.theme=t==='dark'||t==='light'?t:q.matches?'dark':'light'};q.addEventListener('change',set);set()})()</script>
+  <link rel="preload" href="assets/fonts/geologica-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/site.css?v=f76b8282">
+  <script src="assets/site.js?v=f76b8282" defer></script>
 </head>
 <body>
-<main>
-  <header>
-    <a class="brand" href="./"><img src="apple-touch-icon.png" alt="">Porog</a>
-    <nav><a href="privacy.html">Privacy</a><a href="support.html">Support</a></nav>
-  </header>
+<div class="frame" id="top">
+  <header class="nav"><div class="nav-in">
+    <a class="brand" href="./"><img src="apple-touch-icon.png" width="32" height="32" alt="">Porog</a>
+    <nav aria-label="Porog"><ul>
+      <li><a href="./#window">90/180</a></li><li><a href="./#screens">Screens</a></li><li><a href="./#globe">Globe</a></li><li><a href="./#residency">Residency</a></li><li><a href="./#features">Features</a></li><li><a href="./support.html">Support</a></li>
+    </ul></nav>
+    <div class="tools">
+      <details class="lang"><summary aria-label="Language"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9.2"/><path d="M2.8 12h18.4M12 2.8c3 2.6 4.2 5.7 4.2 9.2S15 18.6 12 21.2c-3-2.6-4.2-5.700-4.2-9.200S9 5.400 12 2.800z"/></svg>en</summary><div class="langs"><a href="./#en" hreflang="en" lang="en" aria-current="true">English</a><a href="ru/" hreflang="ru" lang="ru">Русский</a></div></details>
+      <button class="theme" id="theme" type="button" aria-label="Light or dark appearance"><svg class="day" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.4"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.3 5.3l1.4 1.4M17.3 17.3l1.4 1.4M5.3 18.7l1.4-1.4M17.3 6.700l1.400-1.400"/></svg><svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8.300 8.300 0 0 1 9.500 4 8.300 8.300 0 1 0 20 14.500z"/></svg></button>
+      <a class="btn small" href="https://apps.apple.com/us/app/porog-days-in-country-tracker/id6835334173">Get the app</a>
+    </div>
+  </div></header>
+  <section class="hero" data-scene="top">
+    <div class="layer sun" data-y=".42" data-m="-10"></div>
+    <img width="320" height="120" class="layer cloud" data-y=".5" data-x=".05" data-m="-14" src="assets/cloud.svg" alt="" style="width:clamp(120px,17vw,250px);left:4%;top:21%">
+    <img width="320" height="120" class="layer cloud" data-y=".38" data-x="-.07" data-m="-22" src="assets/cloud.svg" alt="" style="width:clamp(110px,14vw,200px);right:3%;top:31%">
+    <img width="320" height="120" class="layer cloud" data-y=".3" data-x=".09" data-m="-30" src="assets/cloud.svg" alt="" style="width:clamp(80px,9vw,130px);left:25%;top:52%">
+    <img width="260" height="150" class="layer plane" data-y=".3" data-x=".5" data-m="-40" src="assets/plane.svg" alt="">
+    <img width="2400" height="700" class="layer hills far" fetchpriority="high" data-y=".34" data-m="-12" src="assets/hills-far.svg" alt="">
+    <img width="2400" height="700" class="layer hills mid" fetchpriority="high" data-y=".24" data-m="-20" src="assets/hills-mid.svg" alt="">
+    <img width="120" height="340" class="layer tree" data-y=".2" data-m="-24" src="assets/cypress.svg" alt="" style="width:clamp(44px,5vw,74px);left:3%;bottom:230px">
+    <img width="120" height="340" class="layer tree" data-y=".19" data-m="-26" src="assets/cypress.svg" alt="" style="width:clamp(36px,4vw,60px);left:7%;bottom:215px">
+    <img width="120" height="340" class="layer tree" data-y=".16" data-m="-30" src="assets/cypress.svg" alt="" style="width:clamp(60px,6.4vw,96px);left:29%;bottom:150px">
+    <img width="120" height="340" class="layer tree" data-y=".19" data-m="-27" src="assets/cypress.svg" alt="" style="width:clamp(46px,5vw,76px);right:27%;bottom:200px">
+    <img width="120" height="340" class="layer tree" data-y=".15" data-m="-34" src="assets/cypress.svg" alt="" style="width:clamp(64px,7vw,108px);right:3%;bottom:180px">
+    <img width="120" height="340" class="layer tree" data-y=".17" data-m="-30" src="assets/cypress.svg" alt="" style="width:clamp(44px,5vw,78px);right:9%;bottom:170px">
 
-  <section class="hero">
-    <img class="hero-icon" src="apple-touch-icon.png" alt="Porog app icon">
-    <div>
-      <h1>Days in every country, counted</h1>
+    <div class="hero-text wrap" data-y=".2">
+      <h1>Days in every country, <span>counted</span></h1>
       <p>Porog tracks each country’s tax residency rules and the Schengen 90/180 limit, and warns you before you cross a threshold.</p>
-      <a class="store" href="https://apps.apple.com/us/app/porog-days-in-country-tracker/id6835334173" aria-label="Download Porog on the App Store">
-        <svg viewBox="0 0 384 512" width="24" height="30" aria-hidden="true"><path fill="currentColor" d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
-        <span><small>Download on the</small>App Store</span>
-      </a>
+      <div class="cta"><a class="btn" href="#window">How it works</a><a class="store" href="https://apps.apple.com/us/app/porog-days-in-country-tracker/id6835334173" aria-label="Download Porog on the App Store"><svg viewBox="0 0 384 512" width="24" height="30" aria-hidden="true"><path fill="currentColor" d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg><span><small>Download on the</small>App Store</span></a>
+</div>
     </div>
-    <div class="meter" aria-label="Example: 61 of 90 days used in the Schengen area">
-      <div class="meter-head"><span>Schengen · last 180 days</span><b>61 / 90</b></div>
-      <div class="bar"><span></span><i></i></div>
-      <small>29 days left · warning set at 75 days</small>
-    </div>
-    <span class="pill">iPhone · iPad · Free with an optional one-time Porog Pro purchase</span>
+
+    <div class="stage"><div data-y="-.12" data-m="-8"><div class="phone"><img fetchpriority="high" src="assets/en/screen-overview.webp" width="640" height="1391" alt="Porog on iPhone: 61 of 90 Schengen days used, 166 of 183 days towards residency in Georgia"></div></div></div>
+
+    <div class="card c-photo" data-y="-.28" data-m="26"><div class="pic"><img width="280" height="360" src="assets/passport.svg" alt=""></div><div><strong>Georgia</strong><small>17 days to residency</small></div></div>
+    <div class="card c-day" data-y="-.5" data-m="40"><div class="cal"><b></b>29</div><div><strong>Schengen</strong><small>29 days left</small></div></div>
+    <div class="card c-trip" data-y="-.36" data-m="32"><div class="pic"><img width="260" height="150" src="assets/plane.svg" alt=""></div><div><strong>Forecast</strong><small>Check a trip before you book it</small></div></div>
+    <div class="card c-status" data-y="-.6" data-m="48"><span><b>Schengen 61 / 90</b></span><span>Georgia 166 / 183</span><span class="ok">Within the limits</span></div>
+
+    <img width="2400" height="700" class="layer hills near" fetchpriority="high" data-y=".04" data-m="-34" src="assets/hills-near.svg" alt="">
+    <img width="320" height="330" class="layer prop left" data-y="-.1" data-m="16" src="assets/suitcase.svg" alt="">
+    <img width="280" height="360" class="layer prop right" data-y="-.2" data-m="24" src="assets/passport.svg" alt="">
   </section>
 
-  <h2>What it does</h2>
-  <div class="features">
-    <div class="feature"><h3>Schengen 90/180</h3><p>A rolling count of days in the Schengen area, and the date you can return.</p></div>
-    <div class="feature"><h3>Tax residency</h3><p>Days per country against each country’s residency rule, including the countries where you want residency.</p></div>
-    <div class="feature"><h3>Forecast</h3><p>See how a planned trip changes your counts before you book it.</p></div>
-    <div class="feature"><h3>Warnings</h3><p>Notifications ahead of a limit, on the day count you choose.</p></div>
-    <div class="feature"><h3>Calendar and globe</h3><p>The whole year at a glance, and your flight history on a globe.</p></div>
-    <div class="feature"><h3>Reports</h3><p>A PDF statement of stay and CSV export, with proof documents attached to trips.</p></div>
-    <div class="feature"><h3>Trip suggestions</h3><p>Optional hints from the time and place of your photos and calendar events, read on the device.</p></div>
-    <div class="feature"><h3>Widgets and Shortcuts</h3><p>Your counts on the Home and Lock Screen, and actions for Siri and Shortcuts.</p></div>
-  </div>
+  <main class="sheet">
+    <section class="steps wrap" id="window">
+      <div class="pin"><div class="plateau">
+        <div class="board" id="board" role="img" aria-labelledby="say"></div>
+        <div class="say"><p id="say" aria-live="polite">The last 180 days, up to today</p>
+          <label class="trip" id="trip" hidden>Trip length <input id="length" type="range" min="1" max="60" value="29"> <output id="length-text"></output></label></div>
+      </div></div>
+      <div>
+        <div class="step" data-step="0"><h2>A 180-day window</h2><p>Every day the Schengen rule looks back 180 days, today included.</p></div>
+        <div class="step" data-step="1"><h2>90 days inside it</h2><p>All days spent in the Schengen area add up. The day you arrive and the day you leave both count.</p></div>
+        <div class="step" data-step="2"><h2>Old days come back</h2><p>The window moves on. A day that falls out of it is yours to spend again.</p></div>
+        <div class="step" data-step="3"><h2>Try a trip</h2><p>How long could you stay from tomorrow? Move the slider: each day of the trip is checked against its own window.</p><small>An example with three past stays.</small></div>
+      </div>
+    </section>
 
-  <div class="card">
-    <h3 style="margin-top:0">Private by design</h3>
-    <p style="margin-bottom:0">Trips stay on your device and in your own iCloud. There is no Porog server and we cannot see your travel history. <a href="privacy.html">Privacy Policy</a></p>
-  </div>
+    <section class="numbers" id="screens">
+      <div class="run a" data-x="-.34" aria-hidden="true">90 / 180</div>
+      <div class="run b" data-x=".3" aria-hidden="true">183 days</div>
+      <div class="wrap trio">
+        <figure data-y=".05"><div class="phone"><img src="assets/en/screen-country.webp" width="640" height="1391" loading="lazy" alt="Porog: residency in Georgia"></div><figcaption><b>Residency</b>Days counted, days left and when the count changes</figcaption></figure>
+        <figure data-y="-.1"><div class="phone"><img src="assets/en/screen-calendar.webp" width="640" height="1391" loading="lazy" alt="Porog: the year in the calendar"></div><figcaption><b>Calendar</b>The whole year at a glance, and your flights on a globe</figcaption></figure>
+        <figure data-y=".12"><div class="phone"><img src="assets/en/screen-forecast.webp" width="640" height="1391" loading="lazy" alt="Porog: forecast of a planned trip"></div><figcaption><b>Forecast</b>How a planned trip changes your counts</figcaption></figure>
+      </div>
+    </section>
 
-  <section lang="ru">
-    <h2>По-русски</h2>
-    <p>Porog считает дни в каждой стране: следит за правилами налогового резидентства и шенгенским лимитом 90/180 и заранее предупреждает. Прогноз поездок, календарь года, отчёт в PDF и CSV, виджеты и Быстрые команды. Поездки хранятся на устройстве и в вашем iCloud — у нас нет сервера, и мы их не видим.</p>
+    <section class="globe" id="globe">
+      <div class="stage-of" id="globe-stage"><canvas id="globe-canvas" tabindex="0" role="application" aria-label="Globe with the flights of an example year. Arrow keys turn it, plus and minus zoom, space plays."></canvas></div>
+      <div class="globe-in wrap">
+        <h2>Your year <span>on a globe</span></h2>
+        <p>Every flight of the year, replayed. Turn the globe, zoom in or tap any country.</p>
+        <div class="now" id="globe-now" aria-live="off"><strong></strong><ul></ul></div>
+        <div class="keys" id="globe-keys" hidden>
+          <button class="btn" id="globe-play" type="button">Play the flights</button>
+          <button class="round" id="globe-in" type="button" aria-label="Zoom in"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+          <button class="round" id="globe-out" type="button" aria-label="Zoom out"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+        </div>
+        <ol class="stops" id="globe-stops"><li><button type="button" data-code="GE"><i></i>Georgia <b>41</b></button></li><li><button type="button" data-code="TH"><i></i>Thailand <b>18</b></button></li><li><button type="button" data-code="GE"><i></i>Georgia <b>66</b></button></li><li><button type="button" data-code="PT"><i></i>Portugal <b>36</b></button></li><li><button type="button" data-code="ES"><i></i>Spain <b>16</b></button></li><li><button type="button" data-code="RS"><i></i>Serbia <b>22</b></button></li><li><button type="button" data-code="DE"><i></i>Germany <b>11</b></button></li><li><button type="button" data-code="GE"><i></i>Georgia <b>47</b></button></li><li><button type="button" data-code="TR"><i></i>Türkiye <b>47</b></button></li><li><button type="button" data-code="PT"><i></i>Portugal <b>18</b></button></li></ol>
+        <small>An example year. Rules are simplified.</small>
+      </div>
+    </section>
+
+    <section class="ward" id="residency">
+      <div class="blob" data-y=".16" style="width:44vw;aspect-ratio:1;right:-8vw;top:-12vw"></div>
+      <div class="blob" data-y="-.1" style="width:20vw;aspect-ratio:1;left:30%;bottom:-9vw"></div>
+      <div class="ward-in wrap">
+        <div><h2>Tax residency <span>Each country has its own rule</span></h2><p>Porog knows the period, the threshold and how days are counted. Pick a country.</p><div class="codes"><button class="code-of" type="button" aria-pressed="true" aria-label="Georgia">GE</button><button class="code-of" type="button" aria-pressed="false" aria-label="Serbia">RS</button><button class="code-of" type="button" aria-pressed="false" aria-label="Portugal">PT</button><button class="code-of" type="button" aria-pressed="false" aria-label="Spain">ES</button><button class="code-of" type="button" aria-pressed="false" aria-label="Germany">DE</button><button class="code-of" type="button" aria-pressed="false" aria-label="United Kingdom">GB</button><button class="code-of" type="button" aria-pressed="false" aria-label="Ireland">IE</button><button class="code-of" type="button" aria-pressed="false" aria-label="Cyprus">CY</button><button class="code-of" type="button" aria-pressed="false" aria-label="UAE">AE</button><button class="code-of" type="button" aria-pressed="false" aria-label="Thailand">TH</button><button class="code-of" type="button" aria-pressed="false" aria-label="Malaysia">MY</button><button class="code-of" type="button" aria-pressed="false" aria-label="United States">US</button></div><small>Rules are simplified. Porog does not replace advice from a tax professional or official authorities.</small></div>
+        <div class="page-of" data-y="-.03" aria-live="polite"><div class="stamp" id="stamp"><b>Georgia</b><strong>183</strong><span>days</span><i>Any 12 consecutive months</i></div><p id="note"></p><span class="mrz" aria-hidden="true">P&lt;POROG&lt;&lt;DAYS&lt;IN&lt;EVERY&lt;COUNTRY&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;</span></div>
+      </div>
+    </section>
+
+    <section class="wrap more">
+      <h2>Private by design</h2>
+      <p class="about">Trips stay on your device and in your own iCloud. There is no Porog server and we cannot see your travel history.</p>
+      <dl><dt>No account</dt><dd>Porog has no sign-in and does not ask for your name or e-mail.</dd></dl><dl><dt>Assistant on the device</dt><dd>On devices with Apple Intelligence, the assistant answers with Apple’s on-device language model.</dd></dl><dl><dt>Porog Pro</dt><dd>The app is free. An optional one-time purchase removes ads on iPhone and iPad and unlocks Forecast and Flights on Apple TV.</dd></dl><dl><dt>A counting tool</dt><dd>Rules change and depend on your situation, so confirm important decisions with the authorities or a professional.</dd></dl>
+    </section>
+  </main>
+
+  <section class="gate" id="features">
+    <img width="2400" height="700" loading="lazy" class="layer hills ghills" data-y=".2" src="assets/hills-far.svg" alt="">
+    <h2 class="wrap" data-y=".12">From the first day <span>to the threshold</span></h2>
+    <img width="2400" height="260" loading="lazy" class="layer turf" data-y=".02" src="assets/turf.svg" alt="">
+    <img width="320" height="330" loading="lazy" class="layer keeper" data-y="-.06" src="assets/suitcase.svg" alt="">
   </section>
 
-  <footer>
-    <a href="privacy.html">Privacy Policy</a> ·
-    <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of Use</a> ·
-    <a href="support.html">Support</a> ·
-    <a href="mailto:porogapp@gmail.com">porogapp@gmail.com</a>
-  </footer>
-</main>
+  <section class="dig" id="dig">
+    <div class="rail" aria-hidden="true"><div><img src="apple-touch-icon.png" width="34" height="34" alt=""><span id="depth"></span></div></div>
+    <div class="band ok"><img width="200" height="200" class="thing" loading="lazy" data-y="-0.22" src="assets/stamp-round.svg" alt="" style="left:3%;top:8%;width:clamp(65px,10.0vw,130px)"><img width="240" height="170" class="thing" loading="lazy" data-y="-0.3" src="assets/stamp-square.svg" alt="" style="left:88%;top:46%;width:clamp(85px,13.1vw,170px)"><div class="doors wrap"><article data-y=".03"><div class="door"><img width="200" height="200" class="riser" src="assets/thing-photo.svg" alt="" loading="lazy"></div><h3>Trip suggestions</h3><p>Optional hints from the time and place of your photos and calendar events, read on the device.</p></article><article data-y="-.05"><div class="door"><img width="200" height="200" class="riser" src="assets/thing-pass.svg" alt="" loading="lazy"></div><h3>Boarding pass scan</h3><p>Point the camera at a boarding pass and the trip fills itself in.</p></article><article data-y=".06"><div class="door"><img width="200" height="200" class="riser" src="assets/thing-pin.svg" alt="" loading="lazy"></div><h3>Trips from location</h3><p>Off by default. Only the country and the date are kept, on this device only.</p></article></div></div>
+<div class="band warn"><img width="2400" height="160" class="edge" loading="lazy" src="assets/strata-warn.svg" alt=""><img width="200" height="180" class="thing" loading="lazy" data-y="-0.18" src="assets/stamp-tri.svg" alt="" style="left:1%;top:40%;width:clamp(85px,13.1vw,170px)"><img width="200" height="200" class="thing" loading="lazy" data-y="0.16" src="assets/stamp-round.svg" alt="" style="left:91%;top:12%;width:clamp(70px,10.8vw,140px)"><div class="doors wrap"><article data-y=".03"><div class="door"><img width="200" height="200" class="riser" src="assets/thing-bell.svg" alt="" loading="lazy"></div><h3>Warnings</h3><p>Notifications ahead of a limit, on the day count you choose.</p></article><article data-y="-.05"><div class="door"><img width="200" height="200" class="riser" src="assets/thing-forecast.svg" alt="" loading="lazy"></div><h3>Forecast</h3><p>See how a planned trip changes your counts before you book it.</p></article><article data-y=".06"><div class="door"><img width="200" height="200" class="riser" src="assets/thing-globe.svg" alt="" loading="lazy"></div><h3>Calendar and globe</h3><p>The whole year at a glance, and your flight history on a globe.</p></article></div></div>
+<div class="band bad"><img width="2400" height="160" class="edge" loading="lazy" src="assets/strata-bad.svg" alt=""><img width="240" height="170" class="thing" loading="lazy" data-y="0.18" src="assets/stamp-square.svg" alt="" style="left:30%;top:12%;width:clamp(80px,12.3vw,160px)"><img width="200" height="180" class="thing" loading="lazy" data-y="-0.24" src="assets/stamp-tri.svg" alt="" style="left:89%;top:34%;width:clamp(90px,13.8vw,180px)"><div class="doors wrap"><article data-y=".03"><div class="door"><img width="200" height="200" class="riser" src="assets/thing-report.svg" alt="" loading="lazy"></div><h3>Reports</h3><p>A PDF statement of stay and CSV export.</p></article><article data-y="-.05"><div class="door"><img width="200" height="200" class="riser" src="assets/thing-proof.svg" alt="" loading="lazy"></div><h3>Proof documents</h3><p>Tickets, stamps and bookings attached to trips.</p></article><article data-y=".06"><div class="door"><img width="200" height="200" class="riser" src="assets/thing-message.svg" alt="" loading="lazy"></div><h3>Cards in Messages</h3><p>Send a card with your days to someone you travel with.</p></article></div></div>
+<div class="band night"><img width="2400" height="160" class="edge" loading="lazy" src="assets/strata-night.svg" alt=""><img width="200" height="200" class="thing" loading="lazy" data-y="0.16" src="assets/stamp-round.svg" alt="" style="left:62%;top:8%;width:clamp(75px,11.5vw,150px)"><img width="240" height="170" class="thing" loading="lazy" data-y="-0.2" src="assets/stamp-square.svg" alt="" style="left:-1%;top:52%;width:clamp(95px,14.6vw,190px)"><div class="doors wrap"><article data-y=".03"><div class="door"><img width="200" height="200" class="riser" src="assets/thing-widget.svg" alt="" loading="lazy"></div><h3>Widgets and Shortcuts</h3><p>Your counts on the Home and Lock Screen, and actions for Siri and Shortcuts.</p></article><article data-y="-.05"><div class="door"><img width="200" height="200" class="riser" src="assets/thing-watch.svg" alt="" loading="lazy"></div><h3>Apple Watch</h3><p>Your counts on your wrist.</p></article><article data-y=".06"><div class="door"><img width="200" height="200" class="riser" src="assets/thing-tv.svg" alt="" loading="lazy"></div><h3>Apple TV</h3><p>Your travel year on the big screen.</p></article></div></div>
+    <div class="band night floor-band"><div class="floor wrap">
+      <img width="520" height="300" class="bar" data-y="-.05" src="assets/barrier.svg" loading="lazy" alt="">
+      <h2>See the threshold <span>before you cross it</span></h2>
+      <a class="store" href="https://apps.apple.com/us/app/porog-days-in-country-tracker/id6835334173" aria-label="Download Porog on the App Store"><svg viewBox="0 0 384 512" width="24" height="30" aria-hidden="true"><path fill="currentColor" d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg><span><small>Download on the</small>App Store</span></a>
+
+      <p class="pill">iPhone · iPad · Apple Watch · Apple TV</p>
+      <footer><a href="./">Home</a><a href="./privacy.html">Privacy Policy</a><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of Use</a><a href="./support.html">Support</a><a href="mailto:porogapp@gmail.com">porogapp@gmail.com</a></footer>
+
+    </div></div>
+  </section>
+
+</div>
+<script type="application/json" id="texts">{"say0":"The last 180 days, up to today","say1":"61 of 90 days used, 29 left","say2":"45 days later: 36 of 90 counted, 54 left","tripDays":"{0} d","tripFits":"Fits: {0} of 90 on the last day","tripOver":"Day {0} is over the limit: {1} of 90","day":"Day {0} / 90","countries":[["GE","Georgia",183,"Any 12 consecutive months",""],["RS","Serbia",183,"Any 12 consecutive months",""],["PT","Portugal",184,"Any 12 consecutive months","Also resident from day one if your “habitual residence” is in Portugal."],["ES","Spain",184,"Calendar year","Also resident if your center of business interests is in Spain or your spouse and minor children live there."],["DE","Germany",183,"Any 12 consecutive months","With a home (Wohnsitz) you are resident from day one, regardless of days."],["GB","United Kingdom",183,"Tax year: 6 April – 5 April","Statutory Residence Test: with UK ties (family, home, work) 16–120 days may be enough."],["IE","Ireland",183,"Calendar year","Or 280 days over two calendar years in a row."],["CY","Cyprus",184,"Calendar year","60 days may be enough under extra conditions."],["AE","UAE",183,"Any 12 consecutive months","90 days are enough with a UAE residence visa and a permanent home or job there."],["TH","Thailand",180,"Calendar year",""],["MY","Malaysia",182,"Calendar year",""],["US","United States",183,"Days this year + ⅓ of last year + ⅙ of the year before","US citizens and green card holders are always tax residents."]],"stops":[["GE","Georgia","1 January",41],["TH","Thailand","11 February",18],["GE","Georgia","1 March",66],["PT","Portugal","10 May",36],["ES","Spain","15 June",16],["RS","Serbia","1 July",22],["DE","Germany","26 July",11],["GE","Georgia","6 August",47],["TR","Türkiye","22 September",47],["PT","Portugal","8 November",18]],"globePlay":"Play the flights","globePause":"Pause","stayLine":"{0} · {1} days","kmLine":"{0} km","sumTitle":"9 flights · 7 countries","sumLine":"{0} km in the example year","yearDays":"{0} days in the example year","noDays":"No days in the example year","zoneLine":"Schengen: one 90/180 count shared by {0} countries","ruleLine":"Tax residency from {0} days. {1}"}</script>
+<script src="assets/globe.js?v=f76b8282" data-world="assets/world.json?v=f76b8282" defer></script>
 </body>
 </html>
